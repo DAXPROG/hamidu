@@ -1,0 +1,129 @@
+body{
+ margin: 0px;
+ padding: 0px;
+}
+
+
+#top-container{
+ display: flex;
+ width:80%;
+ height:580px;
+}
+
+#left-div{
+ background-color: rgb(40, 46, 47);
+ flex: 1;
+}
+
+#right-div{
+  background-color: rgb(208, 198, 191);
+  flex: 5;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+#footer{
+  background-color: gray;
+  padding: 5px;
+ }
+
+#label{
+ background-color: rgb(44, 27, 6);
+ border-bottom:solid thin white;
+ padding: 6px 0px 7px 10px;
+ background-color: rgb(4, 49, 71);
+ color: white;
+ display: block;
+ width: 100%;
+ text-align: left;
+}
+
+#label:hover{
+  background-color: rgb(0, 0, 0);
+ cursor: pointer;
+}
+#arrow{
+ color:rgb(222, 11, 11) ;
+}
+#prof_image{
+  display: flex;
+  padding: 5px 0px;
+  background-color: bisque;
+  border-radius: 10px;
+  margin-bottom: 3px;
+}
+#results_div{
+  padding: 20px;
+  background-color: bisque;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  overflow-x: scroll;
+}
+
+#parent_image{
+  flex: 1;
+}
+#parent_image img{
+  width:120px;
+  height:120px;
+  object-fit: cover;
+  object-position: top;
+  float: left;
+  border-radius: 10px;
+}
+#student_image{
+  flex: 1;
+}
+#student_image img{
+  width:120px;
+  height:120px;
+  object-fit: cover;
+  object-position: top;
+  float: right;
+  border-radius: 10px;
+}
+
+
+@media (max-width:1000px) {
+ #top-container{
+ width:95%;
+}
+
+ #right-div{
+  flex: 4;
+ }
+  
+ #label{
+ font-size:14px;
+}
+
+#parent_image img{
+  width:110px;
+  height:110px;
+}
+
+#student_image img{
+  width:110px;
+  height:110px;
+}
+}
+@media (max-width:800px) {
+ #top-container{
+ width:98%;
+}
+
+ #right-div{
+  flex: 2.5;
+ }
+ #label{
+ font-size:13px;
+}
+#parent_image img{
+  width:100px;
+  height:100px;
+}
+
+#student_image img{
+  width:100px;
+  height:100px;
+}
+}
